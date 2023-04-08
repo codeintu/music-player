@@ -1,0 +1,36 @@
+body{
+    padding: 60px;
+}
+.container{
+    width: 60%;
+    height: 270px;
+    background-color: lightgrey;
+    display: flex;
+    overflow: hidden;
+}
+.sm-container{
+    width: 27%;
+    height: auto;
+    margin-right: 15px;
+}
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.main-text{
+    color: black;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sub-text{
+    color: rgb(41, 39, 39);
+    font-size: 0.78rem;
+}

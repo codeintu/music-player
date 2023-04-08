@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+       
+    --section-color-blue:#0c1027;
+    --section-color-light-blue:hwb(225 11% 73%);
+    --section-color-red:red;
+    --section-color-dark-red:rgb(224, 14, 14);
+}
+.section-heading-text{
+    color: white;
+    margin-bottom: 15px;
+    letter-spacing: 0.07rem;
+    font-size: 1.13rem;
+    font-weight: bolder;
+}
+::-webkit-scrollbar{
+    width:0.5rem;
+    height: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--section-color-blue);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--section-color-blue);
+    border-radius: 1rem;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--section-color-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 0 40px -12px rgb(0 0 0)
+}
+/* website logo */
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 5px 0 20px;
+    
+}
+/* image inside website logo */
+.img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-image: url(img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.navbar .logo span{
+    font-weight: bolder;
+    letter-spacing: 1.6px;
+}
+.logo .span2{
+    color: #4f5e94;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* search-bar */
+.search-bar{
+    width: 300px;
+    height: 35px;
+    background:var(--section-color-light-blue);
+    padding: 5px 4px 5px 15px;
+    margin-right: 2px;
+    border-radius: 30px;
+}
+#search-input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 85%;
+    letter-spacing: 1.4px;
+    line-height: 1.4rem;
+}
+::placeholder{
+    color: grey;
+}
+.right .search-bar button{
+    border:0;
+    border-radius: 50%;
+    width:27px;
+    height: 27px;
+    background-color:transparent;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.right .search-bar button i{
+    color: white;
+}
+/* user-icon */
+.user-icon{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:0 29px 0 25px;
+    background-image: url(img/profile_2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+/* vip section */
+.vip-section{
+    color: gold;
+    font-size: 1.2rem;
+    position: relative;
+}
+.vip{
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 17px;
+    left: 10px;
+    font-size: 0.6rem;
+    letter-spacing: 1.3px;
+}
+/*notification in navbar*/
+.notification{
+    position: relative;
+}
+/* red indicator on notification ring bell */
+.notification-red-dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top:9px;
+    left: 18px;
+    border: 3px solid var(--section-color-blue);
+}
+.notification{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* microphone in navbar */
+.microphone{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* all hover effects of navbar section*/
+.hover-circle:hover{
+    background-color:var(--section-color-light-blue);
+    cursor: pointer;
+}
+.hover-circle-search:hover{
+    background-color: var(--section-color-blue) !important;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+/* all animation effects of navbar section*/
+
+/* animation on vip section  */
+@keyframes vibration {
+    0%{
+        transform: rotate(0 deg);
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.vip-section{
+    animation:vibration 0.2s linear 400s 5;
+}
+.notification{
+    animation:vibration 0.2s linear 1s 5;
+
+}
+
+
+body{
+    background-color:var(--section-color-blue);
+}
+
+
